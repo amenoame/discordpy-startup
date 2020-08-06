@@ -18,8 +18,8 @@ citycodes = {
     "福岡": '400010',
     "鹿児島": '460010',
     "那覇": '471010',
-    "福井県嶺南": '180020',
-    "福井県嶺北": '180010',
+    "嶺南": '180020',
+    "嶺北": '180010',
     "静岡": '220010'
 }
 
@@ -65,15 +65,6 @@ async def on_message(message):
        reply = 'おはようございます！今日も頑張ろう！'
        await message.channel.send(reply)  
 
-      if message.content.startswith('/fortnite'):
-       reply = 'https://twitter.com/FortniteJPNews?s=20'
-       await message.channel.send(reply)
-
-      if message.content.startswith('/news'):
-       reply = '''https://news.yahoo.co.jp/ 
-                  https://news.google.com/topstories?hl=ja&gl=JP&ceid=JP:ja'''
-       await message.channel.send(reply)
-
       if message.content.startswith('/amazon sale'):
        reply = 'https://www.amazon.co.jp/gp/goldbox?ref_=nav_cs_gb'
        await message.channel.send(reply)
@@ -111,8 +102,7 @@ async def on_message(message):
         「おはござ」　Botが挨拶を返す
         上の挨拶系のものはユーザーがそのワードを言うことによって反応します
         /think 絵文字「thinking」の簡略版
-        /log アドミン権限がある人のみ使用できます 見ているチャンネルのログを全削除します
         ```'''
        await message.channel.send(reply)     
 
-client.run('NTU4MTgzNDAxODI4NjQ2OTMy.XpKteQ.yVr0gcUZ249ZoYDnxadAHHvsEXk')
+client.run('NTU4MTgzNDAxODI4NjQ2OTMy.XJM2zQ.YVKBGZb7vWQfjdYZ_reDdBCv6DU')
